@@ -6,14 +6,68 @@
       "display_name": "示例·页面巡检",
       "description": "打开指定页面,等待内容元素出现,提取 DOM 并截图留档——插件开发参考实现。",
       "version": "0.1.0",
-      "platforms": ["xiaohongshu"],
+      "platforms": [
+        "xiaohongshu"
+      ],
       "params_schema": [
-        { "key": "fixture_url", "title": "目标页面地址", "type": "text", "required": true, "default": "", "options": [] },
-        { "key": "marker", "title": "日志标记词", "type": "text", "required": false, "default": "run", "options": [] }
+        {
+          "key": "fixture_url",
+          "title": "目标页面地址",
+          "type": "text",
+          "required": true,
+          "default": "",
+          "options": []
+        },
+        {
+          "key": "marker",
+          "title": "日志标记词",
+          "type": "text",
+          "required": false,
+          "default": "run",
+          "options": []
+        }
       ],
       "aapkg_url": "https://ccoossdddffdd.github.io/autor-plugins/com.autor.fixture-search-0.1.0.aapkg",
       "aapkg_sha256": "0f0b961b13dd20ad70685361ec72dd8d54dfa4b1dd96ed8212cebef24824c5c6",
       "signature": "5e0ccf7acf9a9a74f0931fbb024b529823504c369539287e30976dfe4813591d73c4cbd6ee0138c500e07dcac64aa8bb3fc3200f0c4d5103f05994b5c8715701"
+    },
+    {
+      "id": "com.autor.xhs-search-like",
+      "display_name": "小红书搜索浏览点赞",
+      "description": "按关键词搜索,逐条浏览笔记(滚动停留),可选点赞并截图留证。",
+      "version": "0.1.0",
+      "platforms": [
+        "xiaohongshu"
+      ],
+      "params_schema": [
+        {
+          "key": "keyword",
+          "title": "搜索关键词",
+          "type": "text",
+          "required": true,
+          "default": "",
+          "options": []
+        },
+        {
+          "key": "count",
+          "title": "浏览笔记条数(1-20)",
+          "type": "number",
+          "required": false,
+          "default": "4",
+          "options": []
+        },
+        {
+          "key": "like",
+          "title": "点赞(关闭=仅浏览)",
+          "type": "bool",
+          "required": false,
+          "default": "true",
+          "options": []
+        }
+      ],
+      "aapkg_url": "https://ccoossdddffdd.github.io/autor-plugins/com.autor.xhs-search-like-0.1.0.aapkg",
+      "aapkg_sha256": "a2acb39c432c122af4190b1b1e114e49609c579f7fe3c62784fdcaf0b4d68265",
+      "signature": "580a7181a7e2eb12b9aa8ac9e249e357cebf0b8b5f84eb40519add2b481bb886822c64b3ffc0c497bd9609693d9494949da3d8e12ada3feaf8efaec92bfa630a"
     }
   ]
 }
