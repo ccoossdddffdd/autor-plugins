@@ -73,7 +73,7 @@
       "id": "com.autor.douyin-search-like",
       "display_name": "抖音搜索浏览点赞",
       "description": "按关键词搜索抖音视频,逐条浏览(滚动停留带出评论),可选点赞并截图留证。",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "platforms": [
         "douyin"
       ],
@@ -103,9 +103,9 @@
           "options": []
         }
       ],
-      "aapkg_url": "https://ccoossdddffdd.github.io/autor-plugins/com.autor.douyin-search-like-0.1.0.aapkg",
-      "aapkg_sha256": "85d4bd81ea5530171b01f0aaa806380cd5fb45ee88cf584558e044672305b028",
-      "signature": "dd89434494fd86cce6e74131a8feea018c1d4e38ba7e1dabed09ab83de0edc922cd3fa6de2f137b300644f402f8c120425ea42df3c1bfbc87b7dee0de1773d02"
+      "aapkg_url": "https://ccoossdddffdd.github.io/autor-plugins/com.autor.douyin-search-like-0.1.1.aapkg",
+      "aapkg_sha256": "0f02d4438b16c3c332c6a74b8362158dbacb2081629194bd507a06e3ccbf0e87",
+      "signature": "677e310a62ab2dc43cc72b507032227e057c62c58622c61ad3e3c4b5b5fe76e35cca6d2ba18fff12cbeecf2a4cbcf935d5cdc24d029016feacd1b287db992007"
     }
   ]
 }
