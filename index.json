@@ -28,8 +28,8 @@
         }
       ],
       "aapkg_url": "https://ccoossdddffdd.github.io/autor-plugins/com.autor.fixture-search-0.1.0.aapkg",
-      "aapkg_sha256": "0f0b961b13dd20ad70685361ec72dd8d54dfa4b1dd96ed8212cebef24824c5c6",
-      "signature": "5e0ccf7acf9a9a74f0931fbb024b529823504c369539287e30976dfe4813591d73c4cbd6ee0138c500e07dcac64aa8bb3fc3200f0c4d5103f05994b5c8715701"
+      "aapkg_sha256": "04f6c1ab86e951161b3f865644a29468ef811bd6a210c118c184c7bc62f3151e",
+      "signature": "54dc1edd7185571ca0c7f7db79da92b8e8c67f640e0aafcea4d84ce621d85caa9f30d6a2770b097f37605da3284109f3b65636e4cea330c3b39e441ae916f506"
     },
     {
       "id": "com.autor.xhs-search-like",
@@ -66,8 +66,46 @@
         }
       ],
       "aapkg_url": "https://ccoossdddffdd.github.io/autor-plugins/com.autor.xhs-search-like-0.1.0.aapkg",
-      "aapkg_sha256": "a2acb39c432c122af4190b1b1e114e49609c579f7fe3c62784fdcaf0b4d68265",
-      "signature": "580a7181a7e2eb12b9aa8ac9e249e357cebf0b8b5f84eb40519add2b481bb886822c64b3ffc0c497bd9609693d9494949da3d8e12ada3feaf8efaec92bfa630a"
+      "aapkg_sha256": "cc60fcf0e7a3b5118a8bb17e098164957cdeea10b2d869191d8d8c5a378dc7e7",
+      "signature": "3b116da1df31436229f8e896d5db41f499a0509db0b8e2a0d920f3bef6cd6ed9fd3df5bc30faa4f6fbf8a65ead73c701d56f5af0f9949202368a8a961dce3500"
+    },
+    {
+      "id": "com.autor.douyin-search-like",
+      "display_name": "抖音搜索浏览点赞",
+      "description": "按关键词搜索抖音视频,逐条浏览(滚动停留带出评论),可选点赞并截图留证。",
+      "version": "0.1.0",
+      "platforms": [
+        "douyin"
+      ],
+      "params_schema": [
+        {
+          "key": "keyword",
+          "title": "搜索关键词",
+          "type": "text",
+          "required": true,
+          "default": "",
+          "options": []
+        },
+        {
+          "key": "count",
+          "title": "浏览视频条数(1-20)",
+          "type": "number",
+          "required": false,
+          "default": "4",
+          "options": []
+        },
+        {
+          "key": "like",
+          "title": "点赞(关闭=仅浏览)",
+          "type": "bool",
+          "required": false,
+          "default": "true",
+          "options": []
+        }
+      ],
+      "aapkg_url": "https://ccoossdddffdd.github.io/autor-plugins/com.autor.douyin-search-like-0.1.0.aapkg",
+      "aapkg_sha256": "85d4bd81ea5530171b01f0aaa806380cd5fb45ee88cf584558e044672305b028",
+      "signature": "dd89434494fd86cce6e74131a8feea018c1d4e38ba7e1dabed09ab83de0edc922cd3fa6de2f137b300644f402f8c120425ea42df3c1bfbc87b7dee0de1773d02"
     }
   ]
 }
