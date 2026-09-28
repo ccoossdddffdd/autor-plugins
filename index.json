@@ -1,111 +1,119 @@
 {
-  "version": 1,
-  "plugins": [
+ "version": 1,
+ "plugins": [
+  {
+   "id": "com.autor.fixture-search",
+   "display_name": "示例·页面巡检",
+   "description": "打开指定页面,等待内容元素出现,提取 DOM 并截图留档——插件开发参考实现。",
+   "version": "0.1.0",
+   "platforms": [
+    "xiaohongshu"
+   ],
+   "params_schema": [
     {
-      "id": "com.autor.fixture-search",
-      "display_name": "示例·页面巡检",
-      "description": "打开指定页面,等待内容元素出现,提取 DOM 并截图留档——插件开发参考实现。",
-      "version": "0.1.0",
-      "platforms": [
-        "xiaohongshu"
-      ],
-      "params_schema": [
-        {
-          "key": "fixture_url",
-          "title": "目标页面地址",
-          "type": "text",
-          "required": true,
-          "default": "",
-          "options": []
-        },
-        {
-          "key": "marker",
-          "title": "日志标记词",
-          "type": "text",
-          "required": false,
-          "default": "run",
-          "options": []
-        }
-      ],
-      "aapkg_url": "https://ccoossdddffdd.github.io/autor-plugins/com.autor.fixture-search-0.1.0.aapkg",
-      "aapkg_sha256": "04f6c1ab86e951161b3f865644a29468ef811bd6a210c118c184c7bc62f3151e",
-      "signature": "54dc1edd7185571ca0c7f7db79da92b8e8c67f640e0aafcea4d84ce621d85caa9f30d6a2770b097f37605da3284109f3b65636e4cea330c3b39e441ae916f506"
+     "key": "fixture_url",
+     "title": "目标页面地址",
+     "type": "text",
+     "required": true,
+     "default": "",
+     "options": []
     },
     {
-      "id": "com.autor.xhs-search-like",
-      "display_name": "小红书搜索浏览点赞",
-      "description": "按关键词搜索,逐条浏览笔记(滚动停留),可选点赞并截图留证。",
-      "version": "0.1.0",
-      "platforms": [
-        "xiaohongshu"
-      ],
-      "params_schema": [
-        {
-          "key": "keyword",
-          "title": "搜索关键词",
-          "type": "text",
-          "required": true,
-          "default": "",
-          "options": []
-        },
-        {
-          "key": "count",
-          "title": "浏览笔记条数(1-20)",
-          "type": "number",
-          "required": false,
-          "default": "4",
-          "options": []
-        },
-        {
-          "key": "like",
-          "title": "点赞(关闭=仅浏览)",
-          "type": "bool",
-          "required": false,
-          "default": "true",
-          "options": []
-        }
-      ],
-      "aapkg_url": "https://ccoossdddffdd.github.io/autor-plugins/com.autor.xhs-search-like-0.1.0.aapkg",
-      "aapkg_sha256": "cc60fcf0e7a3b5118a8bb17e098164957cdeea10b2d869191d8d8c5a378dc7e7",
-      "signature": "3b116da1df31436229f8e896d5db41f499a0509db0b8e2a0d920f3bef6cd6ed9fd3df5bc30faa4f6fbf8a65ead73c701d56f5af0f9949202368a8a961dce3500"
-    },
-    {
-      "id": "com.autor.douyin-search-like",
-      "display_name": "抖音搜索浏览点赞",
-      "description": "按关键词搜索抖音视频,逐条浏览(滚动停留带出评论),可选点赞并截图留证。",
-      "version": "0.1.1",
-      "platforms": [
-        "douyin"
-      ],
-      "params_schema": [
-        {
-          "key": "keyword",
-          "title": "搜索关键词",
-          "type": "text",
-          "required": true,
-          "default": "",
-          "options": []
-        },
-        {
-          "key": "count",
-          "title": "浏览视频条数(1-20)",
-          "type": "number",
-          "required": false,
-          "default": "4",
-          "options": []
-        },
-        {
-          "key": "like",
-          "title": "点赞(关闭=仅浏览)",
-          "type": "bool",
-          "required": false,
-          "default": "true",
-          "options": []
-        }
-      ],
-      "aapkg_url": "https://ccoossdddffdd.github.io/autor-plugins/com.autor.douyin-search-like-0.1.1.aapkg",
-      "aapkg_sha256": "0f02d4438b16c3c332c6a74b8362158dbacb2081629194bd507a06e3ccbf0e87",
-      "signature": "677e310a62ab2dc43cc72b507032227e057c62c58622c61ad3e3c4b5b5fe76e35cca6d2ba18fff12cbeecf2a4cbcf935d5cdc24d029016feacd1b287db992007"
+     "key": "marker",
+     "title": "日志标记词",
+     "type": "text",
+     "required": false,
+     "default": "run",
+     "options": []
     }
-  ]
+   ],
+   "aapkg_url": "https://ccoossdddffdd.github.io/autor-plugins/com.autor.fixture-search-0.1.0.aapkg",
+   "aapkg_sha256": "04f6c1ab86e951161b3f865644a29468ef811bd6a210c118c184c7bc62f3151e",
+   "signature": "54dc1edd7185571ca0c7f7db79da92b8e8c67f640e0aafcea4d84ce621d85caa9f30d6a2770b097f37605da3284109f3b65636e4cea330c3b39e441ae916f506"
+  },
+  {
+   "id": "com.autor.xhs-search-like",
+   "display_name": "小红书搜索浏览点赞",
+   "description": "按关键词搜索,逐条浏览笔记(滚动停留),可选点赞并截图留证。",
+   "version": "0.1.0",
+   "platforms": [
+    "xiaohongshu"
+   ],
+   "params_schema": [
+    {
+     "key": "keyword",
+     "title": "搜索关键词",
+     "type": "text",
+     "required": true,
+     "default": "",
+     "options": []
+    },
+    {
+     "key": "count",
+     "title": "浏览笔记条数(1-20)",
+     "type": "number",
+     "required": false,
+     "default": "4",
+     "options": []
+    },
+    {
+     "key": "like",
+     "title": "点赞(关闭=仅浏览)",
+     "type": "bool",
+     "required": false,
+     "default": "true",
+     "options": []
+    }
+   ],
+   "aapkg_url": "https://ccoossdddffdd.github.io/autor-plugins/com.autor.xhs-search-like-0.1.0.aapkg",
+   "aapkg_sha256": "cc60fcf0e7a3b5118a8bb17e098164957cdeea10b2d869191d8d8c5a378dc7e7",
+   "signature": "3b116da1df31436229f8e896d5db41f499a0509db0b8e2a0d920f3bef6cd6ed9fd3df5bc30faa4f6fbf8a65ead73c701d56f5af0f9949202368a8a961dce3500"
+  },
+  {
+   "id": "com.autor.douyin-search-like",
+   "display_name": "抖音搜索浏览点赞",
+   "description": "按关键词搜索抖音视频,逐条浏览(滚动停留带出评论),可选点赞并截图留证。",
+   "version": "0.1.22",
+   "platforms": [
+    "douyin"
+   ],
+   "params_schema": [
+    {
+     "key": "keyword",
+     "title": "搜索关键词",
+     "type": "text",
+     "required": true,
+     "default": "",
+     "options": []
+    },
+    {
+     "key": "count",
+     "title": "浏览视频条数(1-20)",
+     "type": "number",
+     "required": false,
+     "default": "4",
+     "options": []
+    },
+    {
+     "key": "like",
+     "title": "点赞(关闭=仅浏览)",
+     "type": "bool",
+     "required": false,
+     "default": "true",
+     "options": []
+    },
+    {
+     "key": "use_model",
+     "title": "Laya 智能选卡(失败自动回退盲选)",
+     "type": "bool",
+     "required": false,
+     "default": "true",
+     "options": []
+    }
+   ],
+   "aapkg_url": "https://ccoossdddffdd.github.io/autor-plugins/com.autor.douyin-search-like-0.1.22.aapkg",
+   "aapkg_sha256": "c6f54582ca106d58311a872b55757300b2ff98e5a2d72f588ee558f17d077b90",
+   "signature": "9c18619632190b2d469b5955f50cb1d76a04ee1b4d9a05485d548109b4ac37ec522e318be8124b26c5df371a599b98ae276c0c50b2fb6a9855c22c137a76a106"
+  }
+ ]
 }
